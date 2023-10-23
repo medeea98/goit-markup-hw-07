@@ -1230,10 +1230,40 @@ button[type="submit"]:focus {
     box-shadow: 0px 4px 4px 0px #00000026;
     transition: back-ground var(--transition), color var(--transition), border var(--transition);
 }
+/*PHONE*/
+@media screen and (min-width:480px) and (max-width:768px) {
+    .container-general {
+        max-width: 768px;
+        width: 100%;
+        margin: 0;
+    }
+    .container-header {
+        max-width: 768px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-header {
+        margin-left: 15px;
+    }
+    .nav-bar {
+        position: absolute;
+        visibility: hidden;
+    }
+    .contact-info-container {
+        position: absolute;
+        visibility: hidden;
+    }
+    .container-first-section {
+        width: 480px;
+        width: 100%;
+      }
+
+}
 
 /*TABLET*/
 @media screen and (min-width: 768px) and (max-width:1158px) {
-  
+    
   .container-header {
     display: flex;
     justify-content: space-between;
@@ -1247,16 +1277,24 @@ button[type="submit"]:focus {
     padding-bottom: 10px;
   }
 
+  
   .container-first-section {
     width: 768px;
   }
   .container-text-section{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
     
   }
   .container-text-section li {
     flex-basis: calc((100% - 90px) / 2)
+  }
+  .container-text-section .text {
+    width: 354px;
+    height: 75px;
   }
  
   .rectangle-text{
@@ -1275,6 +1313,8 @@ button[type="submit"]:focus {
   .our-team-members {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 60px;
     margin-top: -50px;
     margin-left: -15px;
@@ -1289,12 +1329,11 @@ button[type="submit"]:focus {
     max-width: 354px;
     
 }
-.member-box img {
-    width: 354px;
-}
+
 .container-icons-regular-customers {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 .container-icons-regular-customers .rectangle-group {
@@ -1341,12 +1380,14 @@ button[type="submit"]:focus {
 .modal {
     position: fixed;
     margin: 0;
+    
 }
 
 }
 
 /*DESKTOP*/
 @media screen and (min-width: 1158px) {
+    
     .container-t {
         position: absolute;
         visibility: hidden;

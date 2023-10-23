@@ -200,11 +200,35 @@
             <h2 class="our-team-title">Our Team</h2>
             <ul class="our-team-members">
               <li class="member-box">
-                <img
-                  src="images/img4.jpg"
-                  alt="Picture with Christopher Walker"
-                  width="270"
+               
+                <picture>
+                  <!--DESKTOP-->
+                  <source
+                  media="(min-width:1158px)"
+                  srcset="
+                  images/img4.jpg 1x,
+                  images/img4-d-2x.jpg 2x"
+                 />
+                  <!--Tablet-->
+                 <source
+                 media="(min-width:768px)"
+                 srcset="
+                 images/img4-t.jpg 1x,
+                 images/img4-t-2x.jpg 2x"
                 />
+                 <!--Mobile-->
+                <source
+                media="(min-width:320px)"
+                srcset="
+                images/img4-m.jpg 1x,
+                images/img4-m-2x.jpg 2x"
+               />
+               <img
+               src="images/img4.jpg"
+               alt="Picture with Christopher Walker"
+               
+             />
+                </picture>
                
                 <div class="inferior-card">
                   <h4 class="our-team-name">Christopher Walker</h4>
@@ -238,11 +262,36 @@
                 </div>
               </li>
               <li class="member-box">
-                <img
-                  src="images/img5.jpg"
-                  alt="Picture with Kylie Evans"
-                  width="270"
+               
+                <picture>
+                  <!--DESKTOP-->
+                  <source
+                  media="(min-width:1158px)"
+                  srcset="
+                  images/img5.jpg 1x,
+                  images/img5-d-2x.jpg 2x"
+                 />
+                  <!--Tablet-->
+                 <source
+                 media="(min-width:768px)"
+                 srcset=" 
+                 images/img5-t.jpg 1x,
+                 images/img5-t-2x.jpg 2x"
                 />
+                 <!--Mobile-->
+                <source
+                media="(min-width:320px)"
+                srcset=" 
+                images/img5-m.jpg 1x,
+                images/img5-m-2x.jpg 2x"
+               />
+               <img
+               src="images/img5.jpg"
+               alt="Picture with Kylie Evans"
+             />
+                </picture>
+               
+
                 <div class="inferior-card">
                   <h4 class="our-team-name">Kylie Evans</h4>
                   <p class="our-team-position">Frontend Developer</p>
@@ -275,7 +324,31 @@
                 </div>
                 </li>
                 <li class="member-box">
-                  <img src="images/img6.jpg" alt="Picture with Ryan Harris" width="270" />
+                  
+                  <picture>
+                    <!--DESKTOP-->
+                    <source
+                    media="(min-width:1158px)"
+                    srcset="
+                    images/img6.jpg 1x,
+                    images/img6-d-2x.jpg 2x"
+                   />
+                    <!--Tablet-->
+                   <source
+                   media="(min-width:768px)"
+                   srcset="
+                   images/img6-t.jpg 1x,
+                   images/img6-t-2x.jpg 2x"
+                  />
+                   <!--Mobile-->
+                  <source
+                  media="(min-width:320px)"
+                  srcset="
+                  images/img6-m.jpg 1x,
+                  images/img6-m-2x.jpg 2x"
+                 />
+                 <img src="images/img6.jpg" alt="Picture with Ryan Harris" />
+                  </picture>
                   <div class="inferior-card">
                     <h4 class="our-team-name">Ryan Harris</h4>
                     <p class="our-team-position">Marketing</p>
@@ -308,7 +381,31 @@
                   </div>
                 </li>
                 <li class="member-box">
-                  <img src="images/img7.jpg" alt="Picture with Tyler Moore" width="270" />
+            
+                  <picture>
+                    <!--DESKTOP-->
+                    <source
+                    media="(min-width:1158px)"
+                    srcset="
+                    images/img7.jpg 1x,
+                    images/img7-d-2x.jpg 2x"
+                   />
+                    <!--Tablet-->
+                   <source
+                   media="(min-width:768px)"
+                   srcset="
+                   images/img7-t.jpg 1x,
+                   images/img7-t-2x.jpg 2x"
+                  />
+                   <!--Mobile-->
+                  <source
+                  media="(min-width:320px)"
+                  srcset="
+                  images/img7-m.jpg 1x,
+                  images/img7-m-2x.jpg 2x"
+                 />
+                 <img src="images/img7.jpg" alt="Picture with Tyler Moore"  />
+                  </picture>
                   <div class="inferior-card">
                     <h4 class="our-team-name">Tyler Moore</h4>
                     <p class="our-team-position">UI Designer</p>
@@ -632,5 +729,7 @@
       </div>
      </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
