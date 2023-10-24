@@ -1232,6 +1232,10 @@ button[type="submit"]:focus {
 }
 /*PHONE*/
 @media screen and (min-width:480px) and (max-width:768px) {
+    body, html {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     .container-general {
         max-width: 768px;
         width: 100%;
@@ -1254,11 +1258,48 @@ button[type="submit"]:focus {
         position: absolute;
         visibility: hidden;
     }
+    .first-section {
+        max-width: 768px;
+    }
     .container-first-section {
-        width: 480px;
-        width: 100%;
+        width: 360px;
+        
       }
-
+      .first-section::after {
+        max-width: 768px;
+        background-size: cover;
+      }
+      
+    .container-text-section {
+        display: block;
+    }
+    .rectangle-text-t {
+        position: absolute;
+        visibility: hidden;
+    }
+    .what-we-do-section {
+        position: absolute;
+        visibility: hidden;
+      }
+      .our-team-members {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        margin-top: -50px;
+        margin-left: -15px;
+    }
+    
+    .our-team-members li {
+        margin-top: 50px;
+        margin-left: 30px;
+        flex-basis: calc((100% - 30px) / 1);
+    }
+    .member-box {
+        max-width: 450px;
+        
+    }
 }
 
 /*TABLET*/
@@ -1267,6 +1308,7 @@ button[type="submit"]:focus {
   .container-header {
     display: flex;
     justify-content: space-between;
+    margin: 0;
   }
   .contact-info-container {
     margin-left: 100px;
