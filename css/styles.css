@@ -1231,7 +1231,7 @@ button[type="submit"]:focus {
     transition: back-ground var(--transition), color var(--transition), border var(--transition);
 }
 /*PHONE*/
-@media screen and (min-width:480px) and (max-width:768px) {
+@media screen and (min-width:320px) and (max-width:768px) {
     body, html {
         max-width: 100%;
         overflow-x: hidden;
