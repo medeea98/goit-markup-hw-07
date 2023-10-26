@@ -21,8 +21,8 @@
 body {
     font-family: Roboto, sans-serif;
     color: var(--main-black);
-    width: 100vw;
-    margin: 0;
+    /*width: 100vw;
+    margin: 0;*/
 }
 
 p,
@@ -43,7 +43,7 @@ a {
 }
 
 .visually-hidden {
-  position: absolute;
+  /*position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -52,7 +52,8 @@ a {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  overflow: hidden;*/
+  display: none;
 }
 
 img {
@@ -129,6 +130,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .container-header a{
     transition: color var(--transition);
@@ -287,7 +289,7 @@ main {
 
 .container-first-section {
     max-width: 1200px;
-    width: 100vw;
+   /* width: 100vw;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -406,13 +408,15 @@ main {
 .what-we-do-elements {
     display: flex;
     padding-bottom: 94px;
+    justify-content: space-around;
+    /* no margins; space around instead
     margin-top: -50px;
-    margin-left: -30px;
+    margin-left: -30px;*/
 }
 .what-we-do-elements li {
     margin-top: 50px;
-    margin-left: 30px;
-    flex-basis: calc((100% - 30px) / 3);
+   /* margin-left: 30px;
+    flex-basis: calc((100% - 30px) / 3);*/
     
 }
 
@@ -433,7 +437,7 @@ main {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top:1435px;
+    top:1490px;
     
 }
 .what-we-do-card h4{
@@ -480,13 +484,14 @@ main {
 .our-team-members {
     display: flex;
     padding-bottom: 94px;
-    margin-top: -50px;
-    margin-left: -30px;
+    /*margin-top: -50px;
+    margin-left: -30px;*/
+    justify-content: space-between;
 }
 
 .our-team-members li {
     margin-top: 50px;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
     flex-basis: calc((100% - 30px) / 4);
 }
 .member-box {
@@ -1231,9 +1236,10 @@ button[type="submit"]:focus {
     transition: back-ground var(--transition), color var(--transition), border var(--transition);
 }
 /*PHONE*/
-@media screen and (min-width:320px) and (max-width:768px) {
+@media screen and (min-width:320px) and (max-width:767px) {
     body, html {
-        max-width: 768px;
+        /*max-width: 768px;*/
+        max-width: 100%;
         
     }
     .js-menu-container {
@@ -1351,14 +1357,16 @@ button[type="submit"]:focus {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        /*padding instead of margin down*/
+        padding-left: 15px;
     }
     .logo-header {
-        margin-left: 15px;
+        /*margin-left: 15px;*/
     }
     .container-header .menu-button {
-        position: absolute;
+        /*position: absolute;
         top: 20px;
-        right: 40px;
+        right: 40px;*/
       }
      
       .container-header .menu-button svg {
@@ -1384,7 +1392,7 @@ button[type="submit"]:focus {
         background-image: url(../images/header-img-m.jpg);
     }
     .container-first-section {
-        width: 360px;
+        /*width: 360px;*/
         
       }
       .first-section-text {
@@ -1409,17 +1417,22 @@ button[type="submit"]:focus {
     }
     .rectangle-text-t {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
     .rectangle-text {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
     .rectangle-text-m {
         fill: var(--background-wheat);
         margin-bottom: 30px;
-        margin-left: 10%;
-        margin-right: 5%;
+        /*margin-left: 10%;
+        margin-right: 5%;*/
+        width: 100% !important;
+      }
+      /* customized rect as well */
+      .rectangle-text-m rect {
+        width: 100% !important;
       }
       
       .container-text-section p {
@@ -1441,13 +1454,14 @@ button[type="submit"]:focus {
         align-items: center;
         justify-content: center;
         padding-bottom: 30px;
-        margin-top: -50px;
-        margin-left: -15px;
+        margin: 0 auto;
+       /* margin-top: -50px;
+        margin-left: -15px;*/
     }
     
     .our-team-members li {
         margin-top: 50px;
-        margin-left: 30px;
+        /*margin-left: 30px;*/
         flex-basis: calc((100% - 30px) / 1);
     }
     .member-box {
@@ -1542,12 +1556,12 @@ button[type="submit"]:focus {
     margin: 0;
   }
   .menu-button {
-    position: absolute;
-    visibility: hidden;
+    
+    display: none;
 }
 .js-menu-container {
     position: absolute;
-    visibility: hidden;
+    display: none;
 }
   .contact-info-container {
     margin-left: 100px;
@@ -1585,7 +1599,7 @@ button[type="submit"]:focus {
  
   .rectangle-text{
     position: absolute;
-    visibility: hidden;
+    display: none;
   }
   .rectangle-text-t {
     fill: var(--background-wheat);
@@ -1594,7 +1608,7 @@ button[type="submit"]:focus {
   }
   .what-we-do-section {
     position: absolute;
-    visibility: hidden;
+    display: none;
   }
   .our-team-members {
     display: flex;
@@ -1608,7 +1622,7 @@ button[type="submit"]:focus {
 
 .our-team-members li {
     margin-top: 50px;
-    margin-left: 30px;
+   margin-left: 30px;
     flex-basis: calc((100% - 30px) / 2);
 }
 .member-box {
@@ -1617,7 +1631,7 @@ button[type="submit"]:focus {
 }
 .container-m {
     position: absolute;
-    visibility: hidden;
+    display: none;
 }
 .container-icons-regular-customers {
     display: flex;
@@ -1630,7 +1644,7 @@ button[type="submit"]:focus {
 }
 .rectangle-group .container  {
     position: absolute;
-    visibility: hidden;
+    display: none;
 }
 .container-footer {
     max-width: 1158px;
@@ -1652,7 +1666,7 @@ button[type="submit"]:focus {
 }
 .subscription-container {
     position: absolute;
-    visibility: hidden;
+    display: none;
 }
 .subscription-container-t {
     display: flex;
@@ -1668,11 +1682,11 @@ button[type="submit"]:focus {
 }
 .footer-icons-m {
     position: absolute;
-    visibility: hidden;
+    display: none;
 }
 .rectangle-text-m {
     position: absolute;
-    visibility: hidden;
+    display: none;
 }
 .modal {
     position: fixed;
