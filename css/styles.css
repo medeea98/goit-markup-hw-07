@@ -1233,8 +1233,8 @@ button[type="submit"]:focus {
 /*PHONE*/
 @media screen and (min-width:320px) and (max-width:768px) {
     body, html {
-        max-width: 100%;
-        overflow-x: hidden;
+        max-width: 768px;
+        
     }
     .js-menu-container {
         display: none;
@@ -1266,6 +1266,7 @@ button[type="submit"]:focus {
       }
       .js-close-menu svg:hover {
         fill: var(--main-blue);
+       
       }
       /*.menu-drawer-navigation {
         display: flex;
@@ -1359,22 +1360,24 @@ button[type="submit"]:focus {
         top: 20px;
         right: 40px;
       }
-      .container-header .menu-button svg:hover {
-        fill: var(--main-blue);
-      }
-      
+     
       .container-header .menu-button svg {
         width: 40px;
         height: 40px;
         fill: black;
       }
+      .menu-button svg:hover,
+      .menu-button svg:focus {
+        fill: var(--main-blue);
+      }
+      
     .nav-bar {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
     .contact-info-container {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
     .first-section {
         max-width: 768px;
@@ -1418,6 +1421,7 @@ button[type="submit"]:focus {
         margin-left: 10%;
         margin-right: 5%;
       }
+      
       .container-text-section p {
         margin-left: 10%;
         margin-right: 5%;
@@ -1429,7 +1433,7 @@ button[type="submit"]:focus {
 
     .what-we-do-section {
         position: absolute;
-        visibility: hidden;
+        display: none;
       }
       .our-team-members {
         display: flex;
@@ -1462,7 +1466,7 @@ button[type="submit"]:focus {
     }
     .rectangle-group .container, .container-t {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
     .container-footer {
         max-width: 780px;
@@ -1484,7 +1488,7 @@ button[type="submit"]:focus {
     }
     .footer-icons {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
     .footer-icons-m  {
         display: flex;
@@ -1505,7 +1509,7 @@ button[type="submit"]:focus {
     }
     .subscription-container {
         position: absolute;
-        visibility: hidden;
+        display: none;
     }
     
     .subscription-container-t {
