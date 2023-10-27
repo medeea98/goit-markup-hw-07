@@ -1430,10 +1430,15 @@ button[type="submit"]:focus {
         /*margin-left: 10%;
         margin-right: 5%;*/
         width: 100% !important;
+        position: relative;
       }
+     
       /* customized rect as well */
       .rectangle-text-m rect {
         width: 100% !important;
+      }
+      .rectangle-text-m .icon {
+        position: relative;
       }
       
       .container-text-section p {
