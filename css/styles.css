@@ -1553,7 +1553,7 @@ button[type="submit"]:focus {
         max-width: 100%;
         width: 100%;
         position: relative;
-        right: 5%;
+        
     }
     .modal-content .close-btn {
         position: absolute;
