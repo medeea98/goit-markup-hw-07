@@ -1543,7 +1543,18 @@ button[type="submit"]:focus {
         margin: 0;
         max-width: 100%;
     }
-
+    .modal-content {
+        max-width: 100%;
+        width: 450px;
+        position: relative;
+    }
+    .modal-content .close-btn {
+        position: absolute;
+        left: 412px;
+    }
+    .modal-content .container-submit {
+        top: 1px;
+    }
     
 }
 
