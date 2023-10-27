@@ -1048,7 +1048,8 @@ button[type="submit"]:focus {
     border: 1px solid rgba(0, 0, 0, 0.10);;
     flex-shrink: 0;
     top: 8px;
-    left: 482px;
+    right: 5%;
+    
 
 }
 .close-btn svg{
@@ -1545,12 +1546,13 @@ button[type="submit"]:focus {
     }
     .modal-content {
         max-width: 100%;
-        width: 450px;
+        width: 90%;
         position: relative;
     }
     .modal-content .close-btn {
         position: absolute;
-        left: 412px;
+        right:5%;
+        
     }
     .modal-content .container-submit {
         top: 1px;
