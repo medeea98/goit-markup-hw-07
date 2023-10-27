@@ -1541,7 +1541,7 @@ button[type="submit"]:focus {
     .modal {
         position: fixed;
         margin: 0;
-        
+        max-width: 100%;
     }
 
     
