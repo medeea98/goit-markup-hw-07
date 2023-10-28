@@ -1283,6 +1283,7 @@ button[type="submit"]:focus {
         display: flex;
         flex-direction: column;
         gap:32px;
+        
       }
       .mobile-menu li {
         font-family: Roboto;
@@ -1331,6 +1332,7 @@ button[type="submit"]:focus {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 48px;
         cursor: pointer;
